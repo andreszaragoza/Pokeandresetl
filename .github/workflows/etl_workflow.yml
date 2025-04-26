@@ -17,6 +17,6 @@ jobs:
         pip install uv
     - name: Install dependencies with uv
       run: |
-        uv pip install .
+        uv pip install . --system
     - name: Run ETL script
       run: python etl.py
